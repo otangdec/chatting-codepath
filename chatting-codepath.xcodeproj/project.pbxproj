@@ -9,10 +9,10 @@
 /* Begin PBXBuildFile section */
 		133BD2B9132DE7E4BA743870 /* Pods_chatting_codepath.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A89551BFEE4516942AA1E4D /* Pods_chatting_codepath.framework */; };
 		D0055C851C6D8BE400B5ABF3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0055C841C6D8BE400B5ABF3 /* AppDelegate.swift */; };
-		D0055C871C6D8BE400B5ABF3 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0055C861C6D8BE400B5ABF3 /* LoginViewController.swift */; };
 		D0055C8A1C6D8BE400B5ABF3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0055C881C6D8BE400B5ABF3 /* Main.storyboard */; };
 		D0055C8C1C6D8BE400B5ABF3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0055C8B1C6D8BE400B5ABF3 /* Assets.xcassets */; };
 		D0055C8F1C6D8BE400B5ABF3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0055C8D1C6D8BE400B5ABF3 /* LaunchScreen.storyboard */; };
+		D0055C9A1C6D92EB00B5ABF3 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0055C991C6D92EB00B5ABF3 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,11 +21,11 @@
 		58CB31E63C5B84360B910301 /* Pods-chatting-codepath.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chatting-codepath.release.xcconfig"; path = "Pods/Target Support Files/Pods-chatting-codepath/Pods-chatting-codepath.release.xcconfig"; sourceTree = "<group>"; };
 		D0055C811C6D8BE400B5ABF3 /* chatting-codepath.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "chatting-codepath.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0055C841C6D8BE400B5ABF3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D0055C861C6D8BE400B5ABF3 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		D0055C891C6D8BE400B5ABF3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D0055C8B1C6D8BE400B5ABF3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D0055C8E1C6D8BE400B5ABF3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D0055C901C6D8BE400B5ABF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D0055C991C6D92EB00B5ABF3 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,14 +78,22 @@
 		D0055C831C6D8BE400B5ABF3 /* chatting-codepath */ = {
 			isa = PBXGroup;
 			children = (
+				D0055C981C6D92D200B5ABF3 /* view controllers */,
 				D0055C841C6D8BE400B5ABF3 /* AppDelegate.swift */,
-				D0055C861C6D8BE400B5ABF3 /* LoginViewController.swift */,
 				D0055C881C6D8BE400B5ABF3 /* Main.storyboard */,
 				D0055C8B1C6D8BE400B5ABF3 /* Assets.xcassets */,
 				D0055C8D1C6D8BE400B5ABF3 /* LaunchScreen.storyboard */,
 				D0055C901C6D8BE400B5ABF3 /* Info.plist */,
 			);
 			path = "chatting-codepath";
+			sourceTree = "<group>";
+		};
+		D0055C981C6D92D200B5ABF3 /* view controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D0055C991C6D92EB00B5ABF3 /* LoginViewController.swift */,
+			);
+			name = "view controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -211,7 +219,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D0055C871C6D8BE400B5ABF3 /* LoginViewController.swift in Sources */,
+				D0055C9A1C6D92EB00B5ABF3 /* LoginViewController.swift in Sources */,
 				D0055C851C6D8BE400B5ABF3 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
