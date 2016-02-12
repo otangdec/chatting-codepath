@@ -1,0 +1,6 @@
+framework module Pods_chatting_codepath {
+  umbrella header "Pods-chatting-codepath-umbrella.h"
+
+  export *
+  module * { export * }
+}
