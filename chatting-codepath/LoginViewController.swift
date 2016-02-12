@@ -35,7 +35,7 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func loginAction(sender: AnyObject) {
-        loginSuccess()
+        loginMethod()
     }
     
     func errorAlert () {
@@ -44,16 +44,21 @@ class LoginViewController: UIViewController {
         self.presentViewController(alertController, animated: true, completion: nil)
     }
     
-    func loginSuccess(){
+    func loginMethod(){
+        
         PFUser.logInWithUsernameInBackground(userName.text!, password:userPassword.text!) {
             (user: PFUser?, error: NSError?) -> Void in
             if user != nil {
-                    print("loginOk")
-            } else {
+                
+                
+                
+            }else {
             self.errorAlert()
             }
         }
     }
+    
+    
     
     func myMethod() {
         var user = PFUser()
@@ -75,6 +80,15 @@ class LoginViewController: UIViewController {
             }
             
         }
+    
+        
+        
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
+//        let ChatViewController = segue.destinationViewController as! ChatViewController
+
         
         
     }
